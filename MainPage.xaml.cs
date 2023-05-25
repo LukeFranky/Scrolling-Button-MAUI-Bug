@@ -18,7 +18,10 @@ public partial class MainPage : ContentPage
 		else
 			CounterBtn.Text = $"Clicked {count} times";
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		Label1.HeightRequest = 500;
+
+
+        SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 }
 
